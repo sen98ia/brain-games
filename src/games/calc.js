@@ -5,9 +5,22 @@ const gameRule = 'What is the result of the expression?';
 
 const randomOperatorGenerator = () => {
   const operators = ['+', '-', '*'];
-  const operatorOptions = operators.length;
-  const randomIndex = Math.floor(Math.random() * operatorOptions);
+  const randomIndex = randomNumberGenerator(0, operators.length);
   return operators[randomIndex];
+};
+
+const calculate = (firstNumber, secondNumber, operator) => {
+  let result;
+  if (operator === '+') {
+    result = firstNumber + secondNumber;
+  }
+  if (operator === '-') {
+    result = firstNumber - secondNumber;
+  }
+  if (operator === '*') {
+    result = firstNumber * secondNumber;
+  }
+  return String(result);
 };
 
 const getCorrectAnswer = () => {
@@ -15,17 +28,8 @@ const getCorrectAnswer = () => {
   const secondNumber = randomNumberGenerator();
   const operator = randomOperatorGenerator();
   const operation = `${firstNumber} ${operator} ${secondNumber}`;
-  let rightAnswer;
-  if (operator === '+') {
-    rightAnswer = firstNumber + secondNumber;
-  }
-  if (operator === '-') {
-    rightAnswer = firstNumber - secondNumber;
-  }
-  if (operator === '*') {
-    rightAnswer = firstNumber * secondNumber;
-  }
-  return [operation, String(rightAnswer)];
+  const rightAnswer = calculate(firstNumber, secondNumber, operator);
+  return [operation, rightAnswer];
 };
 
 export default () => gameRun(gameRule, getCorrectAnswer);
