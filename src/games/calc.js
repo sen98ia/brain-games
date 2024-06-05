@@ -27,9 +27,9 @@ const getCorrectAnswer = () => {
   const firstNumber = randomNumberGenerator();
   const secondNumber = randomNumberGenerator();
   const operator = randomOperatorGenerator();
-  const operation = `${firstNumber} ${operator} ${secondNumber}`;
+  const givenOperation = `${firstNumber} ${operator} ${secondNumber}`;
   const rightAnswer = calculate(firstNumber, secondNumber, operator);
-  return [operation, rightAnswer];
+  return [givenOperation, rightAnswer];
 };
 
 export default () => gameRun(gameRule, getCorrectAnswer);
