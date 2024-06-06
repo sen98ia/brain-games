@@ -13,7 +13,7 @@ const getGCD = (firstNumber, secondNumber) => {
     }
   }
   const result = Math.max(a, b);
-  return String(result);
+  return result;
 };
 
 const getCorrectAnswer = () => {
@@ -21,7 +21,7 @@ const getCorrectAnswer = () => {
   const secondNumber = randomNumberGenerator(1, 100);
   const givenNumbers = `${firstNumber} ${secondNumber}`;
   const rightAnswer = getGCD(firstNumber, secondNumber);
-  return [givenNumbers, rightAnswer];
+  return [givenNumbers, String(rightAnswer)];
 };
 
 export default () => gameRun(gameRule, getCorrectAnswer);
