@@ -21,7 +21,8 @@ const getCorrectAnswer = () => {
   const randomIndex = randomNumberGenerator(0, givenProgression.length - 1);
   const rightAnswer = givenProgression[randomIndex];
   givenProgression[randomIndex] = '..';
-  return [givenProgression, String(rightAnswer)];
+  const givenQuestion = givenProgression.join(' ');
+  return [givenQuestion, String(rightAnswer)];
 };
 
 export default () => gameRun(gameRule, getCorrectAnswer);
