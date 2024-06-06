@@ -16,13 +16,17 @@
 </ul>
 
 <h2>Requirements</h2>
-<p>Node.js 13.2.0 or higher.</p>
+<p>Node.js v13.2.0 or higher.</p>
 
 <h2>Setup</h2>
 <p>Use following commands in your CLI.</p>
+
 <code>git clone git@github.com:sen98ia/frontend-project-44.git</code>
+
 <code>cd frontend-project-44</code>
+
 <code>npm install</code>
+
 <code>npm link</code>
 
 <h2>User guide</h2>
