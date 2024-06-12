@@ -16,12 +16,12 @@ const getGCD = (firstNumber, secondNumber) => {
   return result;
 };
 
-const getCorrectAnswer = () => {
+const generateRound = () => {
   const firstNumber = randomNumberGenerator(1, 100);
   const secondNumber = randomNumberGenerator(1, 100);
-  const givenNumbers = `${firstNumber} ${secondNumber}`;
-  const rightAnswer = getGCD(firstNumber, secondNumber);
-  return [givenNumbers, String(rightAnswer)];
+  const question = `${firstNumber} ${secondNumber}`;
+  const rightAnswer = String(getGCD(firstNumber, secondNumber));
+  return [question, rightAnswer];
 };
 
-export default () => gameRun(gameRule, getCorrectAnswer);
+export default () => gameRun(gameRule, generateRound);
