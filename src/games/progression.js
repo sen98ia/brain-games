@@ -16,13 +16,13 @@ const progressionGenerator = () => {
   return randomProgression;
 };
 
-const getCorrectAnswer = () => {
+const generateRound = () => {
   const givenProgression = progressionGenerator();
   const randomIndex = randomNumberGenerator(0, givenProgression.length - 1);
-  const rightAnswer = givenProgression[randomIndex];
+  const rightAnswer = String(givenProgression[randomIndex]);
   givenProgression[randomIndex] = '..';
-  const givenQuestion = givenProgression.join(' ');
-  return [givenQuestion, String(rightAnswer)];
+  const question = givenProgression.join(' ');
+  return [question, rightAnswer];
 };
 
-export default () => gameRun(gameRule, getCorrectAnswer);
+export default () => gameRun(gameRule, generateRound);
