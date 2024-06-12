@@ -10,26 +10,25 @@ const randomOperatorGenerator = () => {
 };
 
 const calculate = (firstNumber, secondNumber, operator) => {
-  let result;
   if (operator === '+') {
-    result = firstNumber + secondNumber;
+    return firstNumber + secondNumber;
   }
   if (operator === '-') {
-    result = firstNumber - secondNumber;
+    return firstNumber - secondNumber;
   }
   if (operator === '*') {
-    result = firstNumber * secondNumber;
+    return firstNumber * secondNumber;
   }
-  return result;
+  return undefined;
 };
 
-const getCorrectAnswer = () => {
+const generateRound = () => {
   const firstNumber = randomNumberGenerator(-50, 50);
   const secondNumber = randomNumberGenerator(0, 50);
   const operator = randomOperatorGenerator();
-  const givenOperation = `${firstNumber} ${operator} ${secondNumber}`;
-  const rightAnswer = calculate(firstNumber, secondNumber, operator);
-  return [givenOperation, String(rightAnswer)];
+  const question = `${firstNumber} ${operator} ${secondNumber}`;
+  const rightAnswer = String(calculate(firstNumber, secondNumber, operator));
+  return [question, rightAnswer];
 };
 
-export default () => gameRun(gameRule, getCorrectAnswer);
+export default () => gameRun(gameRule, generateRound);
