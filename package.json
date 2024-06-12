@@ -2,12 +2,8 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/sen98ia/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/sen98ia/frontend-project-44/actions)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "Five CLI maths mini-games in JavaScript",
+  "author": "Esenia Zipunnikova",
   "license": "ISC",
   "bin": {
     "brain-games": "bin/brain-games.js",
