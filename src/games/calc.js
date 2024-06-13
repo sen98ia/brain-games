@@ -10,16 +10,13 @@ const randomOperatorGenerator = () => {
 };
 
 const calculate = (firstNumber, secondNumber, operator) => {
-  if (operator === '+') {
-    return firstNumber + secondNumber;
+  switch (operator) {
+    case '+': return firstNumber + secondNumber;
+    case '-': return firstNumber - secondNumber;
+    case '*': return firstNumber * secondNumber;
+    default:
+      throw new Error(`Invalid operator - ${operator}`);
   }
-  if (operator === '-') {
-    return firstNumber - secondNumber;
-  }
-  if (operator === '*') {
-    return firstNumber * secondNumber;
-  }
-  return undefined;
 };
 
 const generateRound = () => {
