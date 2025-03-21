@@ -2,6 +2,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/9f6bf81ed8294e19ccf6/maintainability)](https://codeclimate.com/github/sen98ia/frontend-project-44/maintainability)
 
 # :brain: Brain Games
+Build with: JavaScript, ESlint, npm, readline-sync.
 
 ## Description
 Brain games is a collection of 5 mini-games to test and train math skills. Each game has 3 rounds of math questions on a chosen topic. 3 correct answers in a row successfully complete the game. If the answer is incorrect, the game will be stopped.
