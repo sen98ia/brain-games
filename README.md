@@ -1,43 +1,54 @@
-### Hexlet tests and linter status:
 [![Actions Status](https://github.com/sen98ia/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/sen98ia/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9f6bf81ed8294e19ccf6/maintainability)](https://codeclimate.com/github/sen98ia/frontend-project-44/maintainability)
 
-<h1>Brain-games</h1>
-<h2>Description</h2>
-<p>Brain games is a collection of 5 mini-games to test and train math skills. Each game has 3 rounds of math questions on a chosen topic. 3 correct answers in a row successfully complete the game. If the answer is incorrect, the game will be stopped.</p>
+# :1F9E0: Brain Games
 
-<h2>Сollection of mini-games</h2>
-<ul>
-<li>Brain-even — determining an even number.</li>
-<li>Brain-calc — calculation of mathematical expressions.</li>
-<li>Brain-gcd — determining the greatest common divisor.</li>
-<li>Brain-progression — search for missing elements in a sequence of numbers.</li>
-<li>Brain-prime — determining a prime number.</li>
-</ul>
+## Description
+Brain games is a collection of 5 mini-games to test and train math skills. Each game has 3 rounds of math questions on a chosen topic. 3 correct answers in a row successfully complete the game. If the answer is incorrect, the game will be stopped.
 
-<h2>Requirements</h2>
-<p>Node.js v13.2.0 or higher.</p>
+## Collection of mini-games
+- **Brain-even** — determining an even number.
+- **Brain-calc** — calculation of mathematical expressions.
+- **Brain-gcd** — determining the greatest common divisor.
+- **Brain-progression** — search for missing elements in a sequence of numbers.
+- **Brain-prime** — determining a prime number.
 
-<h2>Setup</h2>
-<p>Use following commands in your CLI.</p>
+## Requirements
+Node.js v13.2.0 or higher.
 
-<code>git clone git@github.com:sen98ia/frontend-project-44.git</code>
+## Setup
+Use the following commands in your CLI:
 
-<code>cd frontend-project-44</code>
+```bash
+git clone git@github.com:sen98ia/brain-games.git
+```
+```bash
+cd brain-games
+```
+```bash
+npm install
+```
 
-<code>npm install</code>
+## User guide
 
-<code>npm link</code>
+To play a mini-game, use one of the following commands:
 
-<h2>User guide</h2>
-<p>To play a mini-game use one of following commands.</p>
-<code>brain-even</code>
-<a href="https://asciinema.org/a/KEMSwxZtixsEiFBJg5w730f0F" target="_blank"><img src="https://asciinema.org/a/KEMSwxZtixsEiFBJg5w730f0F.svg" /></a>
-<code>brain-calc</code>
-<a href="https://asciinema.org/a/uSGeQaXu5WnAaESxWmLV28nlW" target="_blank"><img src="https://asciinema.org/a/uSGeQaXu5WnAaESxWmLV28nlW.svg" /></a>
-<code>brain-gcd</code>
-<a href="https://asciinema.org/a/TLsoezKKE912k5VCup149atUa" target="_blank"><img src="https://asciinema.org/a/TLsoezKKE912k5VCup149atUa.svg" /></a>
-<code>brain-progression</code>
-<a href="https://asciinema.org/a/w4JkV9QQcfexyccXVxPKK2zom" target="_blank"><img src="https://asciinema.org/a/w4JkV9QQcfexyccXVxPKK2zom.svg" /></a>
-<code>brain-prime</code>
-<a href="https://asciinema.org/a/OSxJUjJLjntnejLOcAwlWCU5E" target="_blank"><img src="https://asciinema.org/a/OSxJUjJLjntnejLOcAwlWCU5E.svg" /></a>
+- **brain-even**  
+  `brain-even`  
+  [![asciicast](https://asciinema.org/a/KEMSwxZtixsEiFBJg5w730f0F.svg)](https://asciinema.org/a/KEMSwxZtixsEiFBJg5w730f0F)
+
+- **brain-calc**  
+  `brain-calc`  
+  [![asciicast](https://asciinema.org/a/uSGeQaXu5WnAaESxWmLV28nlW.svg)](https://asciinema.org/a/uSGeQaXu5WnAaESxWmLV28nlW)
+
+- **brain-gcd**  
+  `brain-gcd`  
+  [![asciicast](https://asciinema.org/a/TLsoezKKE912k5VCup149atUa.svg)](https://asciinema.org/a/TLsoezKKE912k5VCup149atUa)
+
+- **brain-progression**  
+  `brain-progression`  
+  [![asciicast](https://asciinema.org/a/w4JkV9QQcfexyccXVxPKK2zom.svg)](https://asciinema.org/a/w4JkV9QQcfexyccXVxPKK2zom)
+
+- **brain-prime**  
+  `brain-prime`  
+  [![asciicast](https://asciinema.org/a/OSxJUjJLjntnejLOcAwlWCU5E.svg)](https://asciinema.org/a/OSxJUjJLjntnejLOcAwlWCU5E)
