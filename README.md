@@ -34,21 +34,31 @@ npm install
 To play a mini-game, use one of the following commands:
 
 - **brain-even**  
-  `brain-even`  
+  ```bash
+   brain-even
+  ```  
   [![asciicast](https://asciinema.org/a/KEMSwxZtixsEiFBJg5w730f0F.svg)](https://asciinema.org/a/KEMSwxZtixsEiFBJg5w730f0F)
 
 - **brain-calc**  
-  `brain-calc`  
+  ```bash
+   brain-calc
+  ```  
   [![asciicast](https://asciinema.org/a/uSGeQaXu5WnAaESxWmLV28nlW.svg)](https://asciinema.org/a/uSGeQaXu5WnAaESxWmLV28nlW)
 
 - **brain-gcd**  
-  `brain-gcd`  
+  ```bash
+   brain-gcd
+  ```  
   [![asciicast](https://asciinema.org/a/TLsoezKKE912k5VCup149atUa.svg)](https://asciinema.org/a/TLsoezKKE912k5VCup149atUa)
 
 - **brain-progression**  
-  `brain-progression`  
+  ```bash
+   brain-progression
+  ```  
   [![asciicast](https://asciinema.org/a/w4JkV9QQcfexyccXVxPKK2zom.svg)](https://asciinema.org/a/w4JkV9QQcfexyccXVxPKK2zom)
 
 - **brain-prime**  
-  `brain-prime`  
+  ```bash
+   brain-prime
+  ```
   [![asciicast](https://asciinema.org/a/OSxJUjJLjntnejLOcAwlWCU5E.svg)](https://asciinema.org/a/OSxJUjJLjntnejLOcAwlWCU5E)
